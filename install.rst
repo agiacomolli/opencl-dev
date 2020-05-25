@@ -19,16 +19,16 @@ Os pacotes de desenvolvimento para OpenCL são instalados com o comando::
 
     $ sudo apt install ocl-icd-opencl-dev
 
-O pacote :bash:`ocl-icd-opencl-dev` contém as bibliotecas genéricas e arquivos
+O pacote ``ocl-icd-opencl-dev`` contém as bibliotecas genéricas e arquivos
 de cabeçalho para utilização das ferramentas de computação paralela.
 
-Também é interessante instalar o software :bash:`clinfo` para verificar as
+Também é interessante instalar o software ``clinfo`` para verificar as
 plataformas computacionais disponíveis. O pacote pode ser instalado com o
 comando::
 
     $ sudo apt install clinfo
 
-O programa :bash:`clinfo` lista as plataformas computacionais disponíveis no
+O programa ``clinfo`` lista as plataformas computacionais disponíveis no
 sistema como segue::
 
     $ clinfo
@@ -49,7 +49,7 @@ e para processadores da AMD em::
 Escolha qual dos pacotes deve ser instalado conforme o processador disponível.
 
 Após a instalação dos pacotes, podemos executar novamente o comando
-:bash:`clist` e o número de plataformas deve ser atualizado::
+``clist`` e o número de plataformas deve ser atualizado::
 
     $ clinfo -l
     Platform #1: Intel Gen OCL Driver
@@ -61,7 +61,7 @@ comando::
 
     $ sudo apt install nvidia-opencl-dev
 
-Listando novamente as plataformas computacionais com :bash:`clist` observamos
+Listando novamente as plataformas computacionais com ``clist`` observamos
 que uma nova plataforma é adicionada::
 
     $ clinfo -l
@@ -80,7 +80,7 @@ placa de vídeo forem instalados. Caso não sejam encontrados, é necessária a
 atualização dos drivers, que pode ser feita via gerenciador de dispositivos.
 
 Uma verificação simples pode ser feita com a busca pelo arquivo
-:bash:`OpenCL.dll`. O arquivo deve estar localizado em
-:bash:`C:\Windows\System32\OpenCL.dll` ou diretório semelhante. Caso o suporte
+``OpenCL.dll``. O arquivo deve estar localizado em
+``C:\Windows\System32\OpenCL.dll`` ou diretório semelhante. Caso o suporte
 ao OpenCL não estiver disponível, a busca não retornará nenhum resultado.
 
