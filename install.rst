@@ -1,6 +1,6 @@
-======
-OpenCL
-======
+====================
+Instalação do OpenCL
+====================
 
 OpenCL (Open Computing Language) é um framework para escrita de programas que
 executam em plataformas heterogêneas que consistem de CPUs, GPUs, DSPs, FPGAs e
@@ -14,8 +14,9 @@ entre diferentes hardwares computacionais.
 Instalação no Linux
 ===================
 
-Vamos assumir uma distibuição baseada em Debian com gerenciador de pacotes apt.
-Os pacotes de desenvolvimento para OpenCL são instalados com o comando::
+Vamos assumir uma distibuição baseada em Debian com gerenciador de pacotes
+``apt``.  Os pacotes de desenvolvimento para OpenCL são instalados com o
+comando::
 
     $ sudo apt install ocl-icd-opencl-dev
 
