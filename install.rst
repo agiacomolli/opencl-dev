@@ -80,8 +80,8 @@ pacotes são adicionados automaticamente quando os drivers de processador e
 placa de vídeo forem instalados. Caso não sejam encontrados, é necessária a
 atualização dos drivers, que pode ser feita via gerenciador de dispositivos.
 
-Uma verificação simples pode ser feita com a busca pelo arquivo
-``OpenCL.dll``. O arquivo deve estar localizado em
-``C:\Windows\System32\OpenCL.dll`` ou diretório semelhante. Caso o suporte
-ao OpenCL não estiver disponível, a busca não retornará nenhum resultado.
+Uma verificação simples pode ser feita com a busca pelo arquivo ``OpenCL.dll``.
+O arquivo deve estar localizado em ``C:\Windows\System32\OpenCL.dll`` ou
+``C:\Windows\SysWOW64``. Caso o suporte ao OpenCL não estiver disponível, a
+busca não retornará nenhum resultado.
 
