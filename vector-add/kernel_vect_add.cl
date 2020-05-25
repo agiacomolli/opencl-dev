@@ -1,0 +1,10 @@
+__kernel void vector_add(__global const int *a, __global const int *b,
+        __global int *c)
+{
+    int i;
+
+    i = get_global_id(0);
+
+    c[i] = a[i] + b[i];
+}
+
