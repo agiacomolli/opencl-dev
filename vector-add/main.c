@@ -5,7 +5,7 @@
 #include "utils.h"
 #include "add.h"
 
-#define VECTOR_LEN          256000000
+#define VECTOR_LEN          128e6
 
 void print_res(int *a, int *b, int *c, int len)
 {
@@ -45,6 +45,7 @@ int main(int argc, char **argv)
     /* Operação linear de adição entre os dois vetores. */
     t = clock();
     e = vect_add_linear(ma, mb, mc, VECTOR_LEN);
+    //e = vect_add_linear_multistage(ma, mb, mc, VECTOR_LEN);
     if (e) {
         fprintf(stderr, "vect_add error\n");
         exit(e);
@@ -57,9 +58,9 @@ int main(int argc, char **argv)
     //print_res(ma, mb, mc, VECTOR_LEN);
 
     /* Operação paralela de adição entre os dois vetores. */
-    for (int i = 0; i < 5; i++) {
     t = clock();
     e = vect_add_parallel(&clp, &addp, ma, mb, mc, VECTOR_LEN);
+    //e = vect_add_parallel_multistage(&clp, &addp, ma, mb, mc, VECTOR_LEN);
     if (e) {
         fprintf(stderr, "kernel_vect_add error\n");
         exit(e);
@@ -67,7 +68,6 @@ int main(int argc, char **argv)
     t = clock() - t;
     elapsed = ((double)t)/CLOCKS_PER_SEC;
     printf("vect_add_parallel: \t%f s\n", elapsed);
-    }
 
     /* Exibe o resultado. */
     //print_res(ma, mb, mc, VECTOR_LEN);

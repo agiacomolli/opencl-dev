@@ -57,7 +57,7 @@ Após a instalação dos pacotes, podemos executar novamente o comando
      `-- Device #0: Intel(R) HD Graphics Skylake ULT GT2
 
 Caso o sistema tenha placa de vídeo, podemos instalar também o driver para o
-dispositivo. No caso de GPU nVidia, os drivers podem ser instalador com o
+dispositivo. No caso de GPU Nvidia, os drivers podem ser instalador com o
 comando::
 
     $ sudo apt install nvidia-opencl-dev
